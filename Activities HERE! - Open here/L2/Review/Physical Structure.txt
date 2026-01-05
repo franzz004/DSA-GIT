@@ -1,0 +1,41 @@
+HashSet
+    │
+    ├── buckets[] (Array of SetNode pointers)
+    │   ├── [0] → SetNode → SetNode → NULL
+    │   │         │              │
+    │   │         "apple"        "avocado"
+    │   │         next           next
+    │   │
+    │   ├── [1] → NULL
+    │   │
+    │   ├── [2] → SetNode → NULL
+    │   │         │
+    │   │         "banana"
+    │   │         next
+    │   │
+    │   └── ...
+    │
+    └── size = 3
+
+
+
+Dictionary
+    │
+    ├── buckets[] (Array of DictNode pointers)
+    │   ├── [0] → DictNode → DictNode → NULL
+    │   │         │                 │
+    │   │         key: "Alice"      key: "Andrew"
+    │   │         value: 85         value: 92
+    │   │         next              next
+    │   │
+    │   ├── [1] → NULL
+    │   │
+    │   ├── [2] → DictNode → NULL
+    │   │         │
+    │   │         key: "Bob"
+    │   │         value: 78
+    │   │         next
+    │   │
+    │   └── ...
+    │
+    └── size = 3
